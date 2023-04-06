@@ -12,7 +12,10 @@ describe('Find Items over' , function(){
             {name : 'bananas', qty : 27},
         ];
 
+
         assert.deepEqual(findItemsOver(itemList, 20), results);
+        assert.deepEqual(findItemsOver(itemList, 1), itemList);
+        assert.deepEqual(findItemsOver(itemList, 30), [{name: 'pears', qty: 37}]);
     });
 
 });
