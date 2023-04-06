@@ -1,4 +1,4 @@
-describe('Bootcamp function tests' , function(){
+describe('Find items over 20' , function(){
     it("should test the 'findItemsOver20' function of the past bootcamp" , function(){
         var itemList = [
             {

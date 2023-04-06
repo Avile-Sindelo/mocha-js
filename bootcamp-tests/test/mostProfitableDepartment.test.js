@@ -1,4 +1,4 @@
-describe('Bootcamp function tests' , function(){
+describe('Most profitable department' , function(){
     it("should test the 'mostProfitableDepartment' function of the past bootcamp" , function(){
         var salesData = [
             {department : 'hardware', sales : 4500, day : 'Monday'},
