@@ -1,5 +1,5 @@
 describe('Find Items over' , function(){
-    it("should test the 'findItemsOver' function of the past bootcamp" , function(){
+    it("should test if the function returns a list of all the items that have a quantity property greater than the provided threshold" , function(){
         let itemList = [
             {name : 'apples', qty : 10},
             {name : 'pears', qty : 37},

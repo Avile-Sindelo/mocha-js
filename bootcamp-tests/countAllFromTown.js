@@ -3,7 +3,7 @@ function countAllFromTown(regList, town){
 	let count = 0;
 
 	for(let i = 0; i < listOfRegs.length; i++){
-		if(listOfRegs[i].trim().startsWith(town)){
+		if(listOfRegs[i].trim().startsWith(town) || listOfRegs[i].trim().endsWith(town)){
 			count = count + 1;
 		}
 	}
