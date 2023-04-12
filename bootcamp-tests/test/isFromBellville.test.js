@@ -5,4 +5,11 @@ describe('Is the car from Bellville' , function(){
         assert.equal(isFromBellville('DJG 344 GP'), false);
     });
 
+    it("should test what happens if the function receives a non-string parameter" , function(){
+        assert.equal(isFromBellville(9), 'Please enter a registration of the correct format!');
+    });
+
+    it("should test what the function does if the an empty string has been passed into the function" , function(){
+        assert.equal(isFromBellville(''), 'A registration cannot be empty like that');
+    });
 });

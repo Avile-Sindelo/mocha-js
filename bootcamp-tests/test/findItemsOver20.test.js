@@ -103,4 +103,11 @@ describe('Find items over 20' , function(){
         assert.deepEqual(findItemsOver20(itemList), result);
     });
 
+    it("should test what the function does it the parameter provided is not a list", function(){
+        assert.deepEqual(findItemsOver20('Nkwenkwezi'), 'Please enter a proper list of items')
+    });
+
+    it("should test happens to the function if the parameter is an empty list", function(){
+        assert.deepEqual(findItemsOver20([]), 'The provided list is empty');
+    });
 });

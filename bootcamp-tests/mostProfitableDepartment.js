@@ -2,6 +2,11 @@
 
 //Should return the most profitable department - a STRING
 function mostProfitableDepartment(salesData){
+    //Make sure the salesData is an Object
+    if(typeof salesData !== 'object'){
+      return 'Please make sure you pass a list of objects into the funciton';
+    }
+
   	//declare an object to hold all departments with their respective totals
   	let myObj = {};
   	//declare a number to use a filter to get the department with the largest total

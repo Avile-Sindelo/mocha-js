@@ -63,4 +63,12 @@ describe('Most profitable department' , function(){
         assert.equal(mostProfitableDepartment(salesData3), 'liquor');
     });
 
+    it("should test what happens if the function recieves an empty object as a parameter" , function(){
+        assert.equal(mostProfitableDepartment({}), '');
+    });
+
+    it("should test what the funtion does if the parameter is not a string" , function(){
+        assert.equal(mostProfitableDepartment(0), 'Please make sure you pass a list of objects into the funciton');
+    });
+
 });

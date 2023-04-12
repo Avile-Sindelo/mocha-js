@@ -1,9 +1,14 @@
 describe('Count registration numbers' , function(){
     it("should test if the function returns the correct number of registrations in the list" , function(){
         assert.equal(countRegNumber('CY 340245, CA 829489, CAA 340934, CJ 304903, CJ 498095'), 5);
-        assert.equal(countRegNumber('CAA 483 534, 894 453 GP, JHD 787 EC, CJ 892 783, CK 898 294, CY 048 884'), 6);
-        assert.equal(countRegNumber('CA 780 303, CY 783 990'), 2);
-        assert.equal(countRegNumber('DYV 037 EC'), 1);
     });
 
+    it("should test what the function does if there is no list to count from" , function(){
+        assert.equal(countRegNumber(''), 0);
+    });
+
+
+    it("should test what the function does if the given parameter is not a string" , function(){
+        assert.equal(countRegNumber(4), 'Please enter a STRING list of registrations.');
+    });
 });

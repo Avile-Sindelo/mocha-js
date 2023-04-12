@@ -5,4 +5,11 @@ describe('From where' , function(){
         assert.equal(fromWhere('JGT 583 EC'), 'Some other place!')
     });
 
+    it("should test what happens if a non-string parameter has been passed to its call" , function(){
+        assert.equal(fromWhere([]), 'Please use the correct registration format!');
+    });
+
+    it("should test what happens if the parameter is an empty string" , function(){
+        assert.equal(fromWhere(''), 'There is no list to search from');
+    });
 });
